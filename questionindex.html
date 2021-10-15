@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+
+<body>
+    <style>
+        html {
+            background-color: #71b3ff;
+        }
+        
+        h1 {
+            margin: auto;
+            display: block;
+            margin-top: 5%;
+        }
+        
+        #text {
+            text-align: center;
+            margin: auto;
+            display: block;
+            padding: 5% 10% 0% 10%;
+            color: white;
+        }
+        
+        img {
+            margin: auto;
+            display: block;
+            margin-top: 5%;
+        }
+        
+        .button2 {
+            background-color: #ddff1b;
+            border: none;
+            color: #ffffff;
+            cursor: pointer;
+            display: inline-block;
+            font-family: 'BenchNine', Arial, sans-serif;
+            font-size: 1em;
+            font-size: 22px;
+            line-height: 1em;
+            margin: 15px 40px;
+            outline: none;
+            padding: 12px 40px 10px;
+            position: relative;
+            text-transform: uppercase;
+            font-weight: 700;
+        }
+        
+        .button2:before,
+        .button2:after {
+            border-color: transparent;
+            -webkit-transition: all 0.25s;
+            transition: all 0.25s;
+            border-style: solid;
+            border-width: 0;
+            content: "";
+            height: 24px;
+            position: absolute;
+            width: 24px;
+        }
+        
+        .button2:before {
+            border-color: #ddff1b;
+            border-right-width: 2px;
+            border-top-width: 2px;
+            right: -5px;
+            top: -5px;
+        }
+        
+        .button2:after {
+            border-bottom-width: 2px;
+            border-color: #ddff1b;
+            border-left-width: 2px;
+            bottom: -5px;
+            left: -5px;
+        }
+        
+        .button2:hover,
+        .button2.hover {
+            background-color: #ddff1b;
+        }
+        
+        .button2:hover:before,
+        .button2.hover:before,
+        .button2:hover:after,
+        .button2.hover:after {
+            height: 100%;
+            width: 100%;
+        }
+    </style>
+    <button class="button2" onClick="location.href='preparationindex.html'">?</button>
+
+    <h1 style="color:  white; text-align: center;">
+        게임소개
+    </h1>
+    <p id="text">
+        이 게임은 머신러닝을 재미있는 방식으로 활용할 수 있는 예를 소개하기 위해 제작되었습니다.<br> 이 게임은 머신러닝을 활용하여 제작되었습니다.<br> 여러분이 그림을 그리면 AI가 무엇을 그린 것인지 추측합니다. 물론 항상 정답을 맞추지는 못합니다 재미로만 사용해주세요
+    </p>
+    <img src="AI.jpeg">
+    <div>
+        <p id="text">
+            만든 사람 : 선린 인터넷 고등학교 2학년 정민재
+        </p>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+
+<body>
+    <style>
+        img {
+            margin: auto;
+            margin-top: 8%;
+            display: block
+        }
+        
+        @import url(https://fonts.googleapis.com/css?family=BenchNine:700);
+        .button {
+            background-color: #c47135;
+            border: none;
+            color: #ffffff;
+            cursor: pointer;
+            display: inline-block;
+            font-family: 'BenchNine', Arial, sans-serif;
+            font-size: 1em;
+            font-size: 22px;
+            line-height: 1em;
+            margin: 15px 40px;
+            outline: none;
+            padding: 12px 40px 10px;
+            position: relative;
+            text-transform: uppercase;
+            font-weight: 700;
+            margin: auto;
+            display: block;
+        }
+        
+        .button:before,
+        .button:after {
+            border-color: transparent;
+            -webkit-transition: all 0.25s;
+            transition: all 0.25s;
+            border-style: solid;
+            border-width: 0;
+            content: "";
+            height: 24px;
+            position: absolute;
+            width: 24px;
+        }
+        
+        .button:before {
+            border-color: #c47135;
+            border-right-width: 2px;
+            border-top-width: 2px;
+            right: -5px;
+            top: -5px;
+        }
+        
+        .button:after {
+            border-bottom-width: 2px;
+            border-color: #c47135;
+            border-left-width: 2px;
+            bottom: -5px;
+            left: -5px;
+        }
+        
+        .button:hover,
+        .button.hover {
+            background-color: #c47135;
+        }
+        
+        .button:hover:before,
+        .button.hover:before,
+        .button:hover:after,
+        .button.hover:after {
+            height: 100%;
+            width: 100%;
+        }
+        
+        .button2 {
+            background-color: #71b3ff;
+            border: none;
+            color: #ffffff;
+            cursor: pointer;
+            display: inline-block;
+            font-family: 'BenchNine', Arial, sans-serif;
+            font-size: 1em;
+            font-size: 22px;
+            line-height: 1em;
+            margin: 15px 40px;
+            outline: none;
+            padding: 12px 40px 10px;
+            position: relative;
+            text-transform: uppercase;
+            font-weight: 700;
+        }
+        
+        .button2:before,
+        .button2:after {
+            border-color: transparent;
+            -webkit-transition: all 0.25s;
+            transition: all 0.25s;
+            border-style: solid;
+            border-width: 0;
+            content: "";
+            height: 24px;
+            position: absolute;
+            width: 24px;
+        }
+        
+        .button2:before {
+            border-color: #71b3ff;
+            border-right-width: 2px;
+            border-top-width: 2px;
+            right: -5px;
+            top: -5px;
+        }
+        
+        .button2:after {
+            border-bottom-width: 2px;
+            border-color: #71b3ff;
+            border-left-width: 2px;
+            bottom: -5px;
+            left: -5px;
+        }
+        
+        .button2:hover,
+        .button2.hover {
+            background-color: #71b3ff;
+        }
+        
+        .button2:hover:before,
+        .button2.hover:before,
+        .button2:hover:after,
+        .button2.hover:after {
+            height: 100%;
+            width: 100%;
+        }
+    </style>
+    <div id="div">
+        <button class="button2" onClick="location.href='questionindex.html'">?</button>
+
+        <img src="icon.png" width="350px" height="350px">
+        <h2 style="text-align:center;">
+            내가 그린 그림을 인공지능이 맞출 수 있을까?
+        </h2>
+        <h3 style="text-align:center;">
+            여러 그림을 머신러닝으로 학습한 AI가 당신의 그림을 인식 할 수 있을까요?
+        </h3>
+        <button class="button" onClick="location.href='index.html'">시작하기</button>
+
+
+        <script>
+            /* Demo purposes only */
+            $(".hover").mouseleave(
+                function() {
+                    $(this).removeClass("hover");
+                }
+            );
+        </script>
+    </div>
+
+
+</body>
+
+</html>
