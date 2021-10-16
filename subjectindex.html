@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html {
+            background-color: #fadd38;
+        }
+        
+        P {
+            text-align: center;
+            margin: auto;
+            display: block;
+        }
+        
+        #subject {
+            padding: 15% 10% 0% 10%;
+            font-size: 30px;
+        }
+        
+        h1 {
+            text-align: center;
+            margin: auto;
+            display: block;
+            padding: 3% 10% 0% 10%;
+            font-size: 30px;
+        }
+        
+        #second {
+            margin-top: 2%;
+        }
+        
+        .startbutton {
+            background-color: #34fd66;
+            border: none;
+            color: #ffffff;
+            cursor: pointer;
+            display: inline-block;
+            font-family: 'BenchNine', Arial, sans-serif;
+            font-size: 1em;
+            font-size: 22px;
+            line-height: 1em;
+            margin: 15px 40px;
+            outline: none;
+            padding: 12px 40px 10px;
+            position: relative;
+            text-transform: uppercase;
+            font-weight: 700;
+            text-align: center;
+            margin: auto;
+            display: block;
+            margin-top: 5%;
+        }
+        
+        .startbutton:before,
+        .startbutton:after {
+            border-color: transparent;
+            -webkit-transition: all 0.25s;
+            transition: all 0.25s;
+            border-style: solid;
+            border-width: 0;
+            content: "";
+            height: 24px;
+            position: absolute;
+            width: 24px;
+        }
+        
+        .startbutton:before {
+            border-color: #1ffc56;
+            border-right-width: 2px;
+            border-top-width: 2px;
+            right: -5px;
+            top: -5px;
+        }
+        
+        .startbutton:after {
+            border-bottom-width: 2px;
+            border-color: #1ffc56;
+            border-left-width: 2px;
+            bottom: -5px;
+            left: -5px;
+        }
+        
+        .startbutton:hover,
+        .startbutton.hover {
+            background-color: #1ffc56;
+        }
+        
+        .startbutton:hover:before,
+        .startbutton.hover:before,
+        .startbutton:hover:after,
+        .startbutton.hover:after {
+            height: 100%;
+            width: 100%;
+        }
+    </style>
+</head>
+
+
+<body>
+    <p id="subject">다음을 그리세요</p>
+    <h1 id="title">별</h1>
+    <p id="second">제한시간 20초</p>
+    <button class="startbutton" onclick="start()">시작하기</button>
+    <script>
+        window.onload = function() {
+
+            var rand = Math.floor(Math.random() * 4) + 2;
+            var subject;
+            switch (rand) {
+                case 2:
+                    {
+                        subject = "별"
+                        break;
+                    }
+                case 3:
+                    {
+                        subject = "네모"
+                        break;
+                    }
+                case 4:
+                    {
+                        subject = "사과"
+                        break;
+                    }
+                case 5:
+                    {
+                        subject = "삼각형"
+                        break;
+                    }
+
+
+            }
+
+            document.getElementById('title').innerText = subject;
+
+
+        }
+
+        function start() {
+            location.href = "index.html"
+            localStorage.setItem('subject', title.innerText);
+
+
+        }
+    </script>
+</body>
+
+</html>
